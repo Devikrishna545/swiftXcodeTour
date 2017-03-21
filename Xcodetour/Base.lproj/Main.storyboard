@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xcodetour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="R09-1H-dCs">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui3-Wa-8b9">
+                                <rect key="frame" x="69" y="85" width="236" height="52"/>
+                                <state key="normal" image="Bluebtn"/>
+                                <connections>
+                                    <action selector="bluebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wa9-6j-3NC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mo-60-BSH">
+                                <rect key="frame" x="96" y="514" width="182" height="52"/>
+                                <state key="normal" image="redbtn"/>
+                                <connections>
+                                    <action selector="redbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9v3-bo-BQg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eIH-I7-ejy">
+                                <rect key="frame" x="0.0" y="298" width="375" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vJQ-PF-S80">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-o2-k1B">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-Wj-zFq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHH-a2-V9h">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="375" id="9ie-Lm-mC2"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="l1w-Sb-Esn"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3mo-60-BSH" secondAttribute="bottom" constant="101" id="3Sy-l2-Zbb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ui3-Wa-8b9" secondAttribute="trailing" constant="54" id="BY6-k8-mqB"/>
+                            <constraint firstItem="eIH-I7-ejy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K1V-iR-4z4"/>
+                            <constraint firstItem="eIH-I7-ejy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KBZ-qP-LBR"/>
+                            <constraint firstItem="ui3-Wa-8b9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="QRU-Am-3ua"/>
+                            <constraint firstItem="ui3-Wa-8b9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="eK8-wS-Kk7"/>
+                            <constraint firstItem="3mo-60-BSH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="nba-Lh-p0F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3mo-60-BSH" secondAttribute="trailing" constant="81" id="zoc-RF-P3H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorview" destination="kHH-a2-V9h" id="8gQ-HD-An0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG" width="375" height="667"/>
+        <image name="Bluebtn" width="182" height="52"/>
+        <image name="redbtn" width="182" height="52"/>
+    </resources>
+</document>
